@@ -1,0 +1,22 @@
+header {
+    height: 110px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    nav {
+        gap: 29px;
+        display: flex;
+        font-size: 24px;
+
+        :hover {
+            color: #70E61C;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.about-me-background {
+    /* !!!!!!! IST NOCH FALSCH !!!!!! */
+    position: relative;
+    z-index: -1;
+}
+
+.about-me-container {
+    padding: 0 100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 128px;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 36px;
+}
+
+.about-me-text-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-highlight-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about-me-highlight {
+    display: flex;
+    gap: 16px;
+}
+
+
+
+
+
+
+.about-me-background {
+    width: 100%;
+}

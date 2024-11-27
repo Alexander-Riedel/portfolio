@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../src/assets/fonts/poppins-v21-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../src/assets/fonts/poppins-v21-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../src/assets/fonts/poppins-v21-latin-regular.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../src/assets/fonts/poppins-v21-latin-regular.woff') format('woff'),
+        /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+        url('../src/assets/fonts/poppins-v21-latin-regular.ttf') format('truetype'),
+        /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('../src/assets/fonts/poppins-v21-latin-regular.svg#Poppins') format('svg');
+    /* Legacy iOS */
+}
+
+/* poppins-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../src/assets/fonts/poppins-v21-latin-700.eot');
+    /* IE9 Compat Modes */
+    src: url('../src/assets/fonts/poppins-v21-latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../src/assets/fonts/poppins-v21-latin-700.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../src/assets/fonts/poppins-v21-latin-700.woff') format('woff'),
+        /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+        url('../src/assets/fonts/poppins-v21-latin-700.ttf') format('truetype'),
+        /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('../src/assets/fonts/poppins-v21-latin-700.svg#Poppins') format('svg');
+    /* Legacy iOS */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141D2F;
+    color: #FFFFFF;
+    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 128px;
+    line-height: 154px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 90px;
+    line-height: 108px;
+    font-weight: 700;
+}
+
+button {
+    color: #FFFFFF;
+    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
