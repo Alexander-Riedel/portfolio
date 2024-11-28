@@ -1,6 +1,12 @@
-.about-me-background {
-    /* !!!!!!! IST NOCH FALSCH !!!!!! */
+.about-me {
     position: relative;
+}
+
+.about-me-background {
+    position: absolute;
+    top: 25vh;
+    left: 0;
+    right: 0;
     z-index: -1;
 }
 
@@ -32,7 +38,18 @@
 
 .about-me-highlight {
     display: flex;
+    align-items: center;
     gap: 16px;
+
+    img {
+        height: 50px;
+        width: 50px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }
 
 
