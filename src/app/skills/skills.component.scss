@@ -1,7 +1,7 @@
 .skills-container {
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .skills-img-container {
@@ -20,6 +20,8 @@
     gap: 10px;
 
     img {
+        width: 72px;
+        object-fit: cover;
         padding: 15px;
         transition: transform 0.3s ease;
 

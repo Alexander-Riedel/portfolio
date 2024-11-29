@@ -40,6 +40,10 @@
     /* Legacy iOS */
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -78,4 +82,12 @@ button {
     font-size: 24px;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.dn {
+    display: none;
+}
+
+.d {
+    display: unset;
 }
