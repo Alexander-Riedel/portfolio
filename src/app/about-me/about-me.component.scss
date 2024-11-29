@@ -1,4 +1,7 @@
 .about-me {
+    margin-top: 200px;
+    scroll-margin-top: 150px;
+    min-height: calc(100vh - 110px);
     position: relative;
 }
 
@@ -11,10 +14,9 @@
 }
 
 .about-me-container {
-    padding: 0 100px;
-    min-height: 100vh;
+    padding: 0 150px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 128px;
 }
 
@@ -51,11 +53,6 @@
         }
     }
 }
-
-
-
-
-
 
 .about-me-background {
     width: 100%;
