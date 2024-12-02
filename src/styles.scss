@@ -40,7 +40,8 @@
     /* Legacy iOS */
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
 }
 
@@ -89,5 +90,9 @@ button {
 }
 
 .d {
-    display: unset;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }

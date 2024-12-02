@@ -29,7 +29,7 @@
                 <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message"
                     placeholder="Write something..." style="height:200px" required></textarea>
                 @if (!message.valid && message.touched) {
-                <span>Please ente a message</span>
+                <span>Please enter a message</span>
                 }
 
                 <div class="contact-policy-check">

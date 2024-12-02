@@ -1,0 +1,43 @@
+footer {
+    border-top: 4px solid #70E61C;
+}
+
+.footer-container {
+    margin: 0 150px;
+    height: 291px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-name {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.footer-middle {
+    font-size: 20px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 42px;
+
+    a {
+        transition: all 0.3s ease;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+}

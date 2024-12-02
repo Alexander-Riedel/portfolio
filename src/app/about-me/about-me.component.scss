@@ -1,6 +1,6 @@
 .about-me {
     margin-top: 200px;
-    scroll-margin-top: 150px;
+    scroll-margin-top: 110px;
     min-height: calc(100vh - 110px);
     position: relative;
 }
@@ -14,9 +14,10 @@
 }
 
 .about-me-container {
+    min-height: calc(100vh - 110px);
     padding: 0 150px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 128px;
 }
 

@@ -1,6 +1,6 @@
 .portfolio-container {
     margin-top: 200px;
-    scroll-margin-top: 150px;
+    scroll-margin-top: 110px;
     min-height: calc(100vh - 110px);
     position: relative;
 }
@@ -25,23 +25,28 @@
 }
 
 .portfolio-project-container {
-    padding: 64px 150px 0 150px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 64px;
+    margin: 64px 150px 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
 }
 
 .portfolio-project {
-    min-height: 400px;
-    min-width: 400px;
+    height: 500px;
+    width: 500px;
     aspect-ratio: 1 / 1;
-    border: 1px solid #70E61C;
+    border: 2px solid #70E61C;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
+    img {
+        width: 100%;
+    }
 }
 
 .portfolio-project-hover {
@@ -148,7 +153,7 @@
 }
 
 .fad-in {
-    animation: fadeIn 0.5s ease forwards;
+    animation: fadeIn 0.75s ease forwards;
 }
 
 @keyframes slideFromTop {
@@ -156,6 +161,7 @@
         opacity: 0;
         transform: translateY(-50px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -167,6 +173,7 @@
         opacity: 1;
         transform: translateY(0);
     }
+
     100% {
         opacity: 0;
         transform: translateY(-50px);
@@ -178,6 +185,7 @@
         opacity: 0;
         transform: translateY(100px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -189,6 +197,7 @@
         opacity: 1;
         transform: translateY(0);
     }
+
     100% {
         opacity: 0;
         transform: translateY(50px);
@@ -199,6 +208,7 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
