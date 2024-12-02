@@ -5,8 +5,18 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss', './header.responsive.scss']
 })
 export class HeaderComponent {
+  menuOpen: boolean = false;
 
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+
+    if (this.menuOpen) {
+        document.body.classList.add('menu-open');
+    } else {
+        document.body.classList.remove('menu-open');
+    }
+}
 }

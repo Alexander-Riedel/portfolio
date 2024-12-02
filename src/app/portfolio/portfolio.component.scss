@@ -37,6 +37,7 @@
     width: 500px;
     aspect-ratio: 1 / 1;
     border: 2px solid #70E61C;
+    background-color: #141D2F;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -212,4 +213,18 @@
     100% {
         opacity: 1;
     }
+}
+
+.portfolio-right-shadow {
+    position: absolute;
+    top: -200px;
+    right: 0;
+    z-index: -1;
+}
+
+.portfolio-left-shadow {
+    position: absolute;
+    bottom: -250px;
+    left: 0;
+    z-index: -1;
 }

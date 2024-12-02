@@ -1,15 +1,19 @@
 <div class="portfolio-container" id="portfolio">
+
     <div class="portfolio-headline">
         <div class="portfolio-headline-line"></div>
         <h2>Portfolio</h2>
     </div>
-    <div class="portfolio-headline-text">Explore a selection of my work here - Interact with projects to see my skills
-        in action.</div>
+
+    <div class="portfolio-headline-text">
+        Explore a selection of my work here - Interact with projects to see my skills in action.
+    </div>
+
     <div class="portfolio-project-container">
 
         <div class="portfolio-project" *ngFor="let project of projects; index as i"
             (mouseenter)="showAlternateContent(i)" (mouseleave)="showOriginalContent(i)">
-            
+
             <div class="portfolio-project-img" [class.d]="!hoverStates[i]" [class.dn]="hoverStates[i]">
                 <img [src]="project.img" [alt]="project.name" [class.fad-in]="!hoverStates[i]">
             </div>
@@ -29,4 +33,12 @@
         </div>
 
     </div>
+
+    <div class="portfolio-right-shadow">
+        <img src="assets/img/blue-shadow-2.svg" alt="">
+    </div>
+    <div class="portfolio-left-shadow">
+        <img src="assets/img/green-shadow-1.svg" alt="">
+    </div>
+
 </div>

@@ -2,18 +2,30 @@
     <img class="review-quote-symbol" src="" alt="">
     <div class="review-container">
         <div class="review-box">
-            <div class="review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem culpa, dolore eum
-                explicabo, ab officia eveniet odio sapiente vel, corporis laborum debitis nostrum nisi. Adipisci tempore
-                asperiores eligendi! Ipsum, similique.</div>
-            <div class="review-author">
-                <div class="review-author-line"></div>
-                <div class="review-author-name">V. Schuster - Team Partner</div>
+            <div class="review-box-quote">
+                <img src="assets/img/reviews/quote.svg" alt="">
+            </div>
+            <div class="review-box-content">
+                <div class="review" id="review-{{[currentIndex]}}">{{ reviews[currentIndex].text }}</div>
+                <div class="review-author" id="review-author-{{[currentIndex]}}">
+                    <div class="review-author-line"></div>
+                    <div class="review-author-name">{{ reviews[currentIndex].author }}</div>
+                </div>
             </div>
         </div>
         <div class="review-picture-box">
-            <div class="review-picture"></div>
+            <div class="review-picture">
+                <img [src]="reviews[currentIndex].image" id="review-img-{{[currentIndex]}}" [alt]="'Image for ' + reviews[currentIndex].author">
+            </div>
             <div class="review-picture-line"></div>
         </div>
     </div>
-    <div class="review-navigation"></div>
+    <div class="review-navigation">
+        <img src="assets/img/reviews/arrow-back.svg" class="arrow-button left" (click)="navigate('left')">
+        <div class="review-dots">
+            <img [src]="i === currentIndex ? 'assets/img/reviews/review-dot-blue.svg' : 'assets/img/reviews/review-dot-purple.svg'"
+                *ngFor="let review of reviews; let i = index" class="review-dot" (click)="goToReview(i)">
+        </div>
+        <img src="assets/img/reviews/arrow-forward.svg" class="arrow-button right" (click)="navigate('right')">
+    </div>
 </div>
