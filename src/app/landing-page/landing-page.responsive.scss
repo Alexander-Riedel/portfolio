@@ -1,0 +1,43 @@
+@media screen and (max-width:1400px) {}
+
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width:992px) {}
+
+@media screen and (max-width:768px) {
+    .landing-page-iam {
+        font-size: 32px;
+    }
+
+    .landing-page-slogan {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .landing-page-scrolldown {
+        display: none;
+    }
+
+    .landing-page-btns {
+        gap: 42px;
+
+        .green-line {
+            width: 64px;
+        }
+
+        a {
+            img {
+                width: 36px;
+                height: 36px;
+            }
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {}
+
+@media screen and (max-width:468px) {}
