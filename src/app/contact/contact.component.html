@@ -1,11 +1,14 @@
 <section id="contact">
+
     <div class="contact-container">
         <div class="contact-headline">
             <div class="contact-headline-space"></div>
             <h2>Contact</h2>
             <div class="contact-headline-line"></div>
         </div>
+
         <div class="contact">
+
             <div class="contact-left">
                 <div class="contact-headline2">
                     <div class="contact-headline2-line"></div>
@@ -21,23 +24,33 @@
             <div class="contact-right">
                 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-                    <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name..."
-                        required>
+                    <div class="form-name">
+                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                            placeholder="Your name..." required>
+                        <span *ngIf="name.invalid && (name.touched || contactForm.submitted)">Please enter a name</span>
+                    </div>
 
-                    <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                        placeholder="Your email..." required
-                        pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-äöüßÄÖÜ]+(\.[a-zA-Z]{2,})+$">
+                    <div class="form-email">
+                        <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                            placeholder="Your email..." required
+                            pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-äöüßÄÖÜ]+(\.[a-zA-Z]{2,})+$">
+                        <span *ngIf="email.invalid && (email.touched || contactForm.submitted)">Please enter a valid
+                            email</span>
+                    </div>
 
-                    <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message"
-                        name="message" placeholder="Write something..." style="height:200px" required></textarea>
-                    @if (!message.valid && message.touched) {
-                    <span>Please enter a message</span>
-                    }
+                    <div class="form-message">
+                        <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message"
+                            name="message" placeholder="Write something..." style="height:200px" required></textarea>
+
+                        <span *ngIf="message.invalid && (message.touched || contactForm.submitted)">Please enter a
+                            message</span>
+                    </div>
 
                     <div class="contact-policy-check">
                         <div class="checkbox-wrapper-12">
                             <div class="cbx">
-                                <input id="cbx-12" type="checkbox" />
+                                <input #checkbox="ngModel" type="checkbox" id="policyCheckbox" name="policyCheckbox"
+                                    [(ngModel)]="contactData.policyAccepted" required>
                                 <label for="cbx-12"></label>
                                 <svg width="15" height="14" viewbox="0 0 15 14" fill="none">
                                     <path d="M2 8.36364L6.23077 12L13 2"></path>
@@ -59,9 +72,15 @@
                         </div>
                         <span>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as
                             outlined.</span>
+
+                        <span *ngIf="checkbox.invalid && (checkbox.touched || contactForm.submitted)"
+                            class="checkbox-message">
+                            Please accept the privace policy.
+                        </span>
                     </div>
 
-                    <input type="submit" value="Send message &#058;&#041;">
+                    <input type="submit" value="Send message &#058;&#041;"
+                        [disabled]="!contactForm.form.valid || !contactData.policyAccepted">
 
                 </form>
             </div>

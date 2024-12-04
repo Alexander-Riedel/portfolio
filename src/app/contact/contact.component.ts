@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
@@ -5,7 +6,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 @Component({
   selector: 'app-contactform',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -17,12 +18,13 @@ export class ContactformComponent {
     name: "",
     email: "",
     message: "",
+    policyAccepted: "",
   };
 
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: './sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -49,5 +51,12 @@ export class ContactformComponent {
     }
   }
 
+  validateForm(form: NgForm): void {
+    if (!form.valid) {
+      form.form.markAllAsTouched();
+    } else {
+      this.onSubmit(form);
+    }
+  }
 
 }
