@@ -12,21 +12,6 @@ header {
     background-color: #141D2FDD;
     backdrop-filter: blur(5px);
 
-    .burger-menu {
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 24px;
-        cursor: pointer;
-
-        span {
-            display: block;
-            width: 30px;
-            height: 3px;
-            background-color: #FFFFFF;
-        }
-    }
-
     nav {
         gap: 29px;
         display: flex;
@@ -36,30 +21,22 @@ header {
             color: #FFFFFF;
             text-decoration: none;
 
+            &.active {
+                color: #70E61C !important;
+            }
+
             &:hover {
                 color: #70E61C;
             }
-
-            &:active {
-                color: #70E61C;
-            }
-        }
-
-        &.active {
-            display: flex;
-            flex-direction: column;
-            background-color: #141D2FDD;
-
-            a {
-                padding: 10px 20px;
-                text-align: center;
-            }
         }
     }
+}
 
-    .name a {
+.name {
+    a {
         font-size: 20px;
         color: #FFFFFF;
         text-decoration: none;
     }
+
 }

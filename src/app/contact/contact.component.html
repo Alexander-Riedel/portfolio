@@ -1,71 +1,75 @@
-<div class="contact-container" id="contact">
-    <div class="contact-headline">
-        <div class="contact-headline-space"></div>
-        <h2>Contact</h2>
-        <div class="contact-headline-line"></div>
-    </div>
-    <div class="contact">
-        <div class="contact-left">
-            <div class="contact-headline2">
-                <div class="contact-headline2-line"></div>
-                <h3>Got a problem to solve?</h3>
-            </div>
-            <div class="contact-left-text">
-                <div>Contact me through this form, I am interested in hearing from you, knowing your ideas and
-                    contributing to your projects with my work.</div>
-                <div>Need a Frontend developer? <b>Contact me!</b></div>
-            </div>
+<section id="contact">
+    <div class="contact-container">
+        <div class="contact-headline">
+            <div class="contact-headline-space"></div>
+            <h2>Contact</h2>
+            <div class="contact-headline-line"></div>
         </div>
+        <div class="contact">
+            <div class="contact-left">
+                <div class="contact-headline2">
+                    <div class="contact-headline2-line"></div>
+                    <h3>Got a problem to solve?</h3>
+                </div>
+                <div class="contact-left-text">
+                    <div>Contact me through this form, I am interested in hearing from you, knowing your ideas and
+                        contributing to your projects with my work.</div>
+                    <div>Need a Frontend developer? <b>Contact me!</b></div>
+                </div>
+            </div>
 
-        <div class="contact-right">
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <div class="contact-right">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-                <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name..."
-                    required>
+                    <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name..."
+                        required>
 
-                <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email..."
-                    required pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-äöüßÄÖÜ]+(\.[a-zA-Z]{2,})+$">
+                    <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                        placeholder="Your email..." required
+                        pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-äöüßÄÖÜ]+(\.[a-zA-Z]{2,})+$">
 
-                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message"
-                    placeholder="Write something..." style="height:200px" required></textarea>
-                @if (!message.valid && message.touched) {
-                <span>Please enter a message</span>
-                }
+                    <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message"
+                        name="message" placeholder="Write something..." style="height:200px" required></textarea>
+                    @if (!message.valid && message.touched) {
+                    <span>Please enter a message</span>
+                    }
 
-                <div class="contact-policy-check">
-                    <div class="checkbox-wrapper-12">
-                        <div class="cbx">
-                            <input id="cbx-12" type="checkbox" />
-                            <label for="cbx-12"></label>
-                            <svg width="15" height="14" viewbox="0 0 15 14" fill="none">
-                                <path d="M2 8.36364L6.23077 12L13 2"></path>
+                    <div class="contact-policy-check">
+                        <div class="checkbox-wrapper-12">
+                            <div class="cbx">
+                                <input id="cbx-12" type="checkbox" />
+                                <label for="cbx-12"></label>
+                                <svg width="15" height="14" viewbox="0 0 15 14" fill="none">
+                                    <path d="M2 8.36364L6.23077 12L13 2"></path>
+                                </svg>
+                            </div>
+                            <!-- Gooey-->
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <defs>
+                                    <filter id="goo-12">
+                                        <fegaussianblur in="SourceGraphic" stddeviation="4" result="blur">
+                                        </fegaussianblur>
+                                        <fecolormatrix in="blur" mode="matrix"
+                                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12">
+                                        </fecolormatrix>
+                                        <feblend in="SourceGraphic" in2="goo-12"></feblend>
+                                    </filter>
+                                </defs>
                             </svg>
                         </div>
-                        <!-- Gooey-->
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                            <defs>
-                                <filter id="goo-12">
-                                    <fegaussianblur in="SourceGraphic" stddeviation="4" result="blur"></fegaussianblur>
-                                    <fecolormatrix in="blur" mode="matrix"
-                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12">
-                                    </fecolormatrix>
-                                    <feblend in="SourceGraphic" in2="goo-12"></feblend>
-                                </filter>
-                            </defs>
-                        </svg>
+                        <span>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as
+                            outlined.</span>
                     </div>
-                    <span>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as
-                        outlined.</span>
-                </div>
 
-                <input type="submit" value="Send message &#058;&#041;">
+                    <input type="submit" value="Send message &#058;&#041;">
 
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
 
-    <div class="contact-right-shadow">
-        <img src="assets/img/purple-shadow-2.svg" alt="">
-    </div>
+        <div class="contact-right-shadow">
+            <img src="assets/img/purple-shadow-2.svg" alt="">
+        </div>
 
-</div>
+    </div>
+</section>
