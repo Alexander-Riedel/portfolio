@@ -6,7 +6,7 @@
 
 .skills-container {
     display: flex;
-    margin-top: 200px;
+    //margin-top: 200px;
     scroll-margin-top: 110px;
     min-height: calc(100vh - 110px);
     position: relative;
@@ -16,8 +16,9 @@
     margin: 0 100px 0 100px;
     width: 60%;
     display: grid;
+    align-content: center;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 0 50px;
+    gap: 80px;
 }
 
 .skill {
@@ -108,4 +109,8 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.looking-for-responsive {
+    display: none;
 }

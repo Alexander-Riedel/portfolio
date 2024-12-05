@@ -1,28 +1,46 @@
 @media screen and (max-width:1400px) {
+    .about-me-container {
+        padding: 0 64px;
+        gap: 64px;
+    }
 
+    .about-me-text {
+        gap: 24px;
+    }
 
-
+    .about-me-text-top {
+        gap: 24px;
+    }
 }
 
-@media screen and (max-width:1200px) {
-
-
-
-}
+@media screen and (max-width:1200px) {}
 
 @media screen and (max-width:992px) {
+    #about-me {
+        margin-top: 120px;
+        min-height: unset;
+        scroll-margin-top: 80px;
+    }
 
+    .about-me-container {
+        flex-direction: column-reverse;
+        gap: 128px;
+    }
 
+    .about-me-text {
+        width: unset;
+        gap: 48px;
+    }
+
+    .about-me-text-top {
+        gap: 48px;
+    }
+
+    .about-me-highlight-container {
+        gap: 36px;
+    }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px) {}
 
-
-
-}
-
-@media screen and (max-width:576px) {
-
-
-
-}
+@media screen and (max-width:576px) {}

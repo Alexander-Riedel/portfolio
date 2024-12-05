@@ -1,0 +1,105 @@
+@media screen and (max-width:1400px) {
+    .skills-img-container {
+        margin: 0 64px 0 64px;
+        gap: 64px;
+    }
+
+    .skills-text-container {
+        margin-left: 25px;
+        gap: 32px;
+
+        h3 {
+            margin-right: 64px;
+        }
+    }
+
+    .skills-text {
+        margin-right: 64px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .skills-img-container {
+        margin: 0 32px 0 64px;
+        gap: 32px;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .skills-text-container {
+        margin-left: 32px;
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .skills-container {
+        scroll-margin-top: 80px;
+        min-height: unset;
+        flex-direction: column-reverse;
+    }
+
+    .skills-text-container {
+        margin-left: 64px;
+        margin-bottom: 64px;
+        min-height: unset;
+        width: unset;
+        gap: 48px;
+
+        a {
+            display: none;
+        }
+    }
+
+    .skill-headline {
+        gap: 16px;
+    }
+
+    h2 {
+        width: unset;
+    }
+
+    .looking-for {
+        display: none;
+    }
+
+    .skills-img-container {
+        margin: 0 64px 64px 64px;
+        width: unset;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 80px;
+    }
+
+    .looking-for-responsive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+
+        h3 {
+            margin-right: unset;
+        }
+
+        span {
+            color: #9747FF;
+        }
+
+        .skills-text {
+            margin: 0 128px 0 128px;
+            text-align: center;
+        }
+
+        button {
+            padding: 15px 30px;
+            border-radius: 8px;
+            box-shadow: 4px 4px 4px 0px #00000040;
+            background-color: #70E61C;
+            border: 1px solid #70E61C;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:576px) {}
+
+@media screen and (max-width:468px) {}

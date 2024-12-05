@@ -18,7 +18,6 @@
 }
 
 .about-me-container {
-    min-height: calc(100dvh - 110px);
     padding: 0 150px;
     display: flex;
     align-items: center;
@@ -36,6 +35,7 @@
 .about-me-text-top {
     display: flex;
     flex-direction: column;
+    gap: 32px;
 }
 
 .about-me-highlight-container {
