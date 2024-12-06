@@ -6,8 +6,14 @@
         <span></span>
     </div>
     <nav [class.active]="menuOpen">
-        <a href="#about-me" [class.active]="activeSection === 'about-me'" (click)="setActiveSection('about-me')">About me</a>
-        <a href="#skills" [class.active]="activeSection === 'skills'" (click)="setActiveSection('skills')">Skills</a>
-        <a href="#portfolio" [class.active]="activeSection === 'portfolio'" (click)="setActiveSection('portfolio')">Portfolio</a>
+        <a href="#about-me" [class.active]="activeSection === 'about-me'" (click)="setActiveSection('about-me')">
+            {{ 'about-me' | translate }}
+        </a>
+        <a href="#skills" [class.active]="activeSection === 'skills'" (click)="setActiveSection('skills')">
+            {{ 'skills' | translate }}
+        </a>
+        <a href="#portfolio" [class.active]="activeSection === 'portfolio'" (click)="setActiveSection('portfolio')">
+            {{ 'portfolio' | translate }}
+        </a>
     </nav>
 </header>

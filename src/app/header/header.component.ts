@@ -1,9 +1,10 @@
 import { Component, HostListener } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss', './header.responsive.scss']
 })

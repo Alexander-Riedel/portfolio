@@ -42,6 +42,10 @@
 }
 
 @media screen and (max-width:768px) {
+    img {
+        max-width: 100%;
+    }
+
     .landing-page-iam {
         font-size: 36px;
     }

@@ -11,7 +11,20 @@
     }
 }
 
-@media screen and (max-width:992px) {}
+@media screen and (max-width:992px) {
+    .footer-container {
+        margin: 48px 64px;
+        flex-direction: column;
+    }
+
+    .legal-notice {
+        display: none;
+    }
+
+    .legal-notice-responsive {
+        display: flex;
+    }
+}
 
 @media screen and (max-width:768px) {}
 
