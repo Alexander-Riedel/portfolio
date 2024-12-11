@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
-import { TranslateModule } from "@ngx-translate/core";
-import { TranslateService } from "@ngx-translate/core";
+import { TranslateModule, TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -13,12 +12,17 @@ import { TranslateService } from "@ngx-translate/core";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
+
 export class AppComponent {
   title = 'portfolio';
 
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['de', 'en']);
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
+
+    const savedLang = localStorage.getItem('language') || this.translate.getBrowserLang();
+    const defaultLang = savedLang?.match(/en|de/) ? savedLang : 'de';
+
+    this.translate.setDefaultLang('de');
+    this.translate.use(defaultLang);
   }
 }

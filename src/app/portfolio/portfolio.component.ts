@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss', './portfolio.responsive.scss']
 })
@@ -13,49 +14,52 @@ export class PortfolioComponent {
 
   hoverStates: boolean[] = [];
   visibilityStates: boolean[] = [];
+  projects: any[] = [];
   private timeoutId: any;
 
-  projects = [
-    {
-      id: 1,
-      name: 'Join',
-      img: 'assets/img/portfolio/join.png',
-      description: 'Description',
-      skills: 'What | U | Use',
-      githubLink: '#',
-      liveLink: '#'
-    },
-    {
-      id: 2,
-      name: 'DABubble',
-      img: 'assets/img/portfolio/dabubble.png',
-      description: 'Description',
-      skills: 'What | U | Use',
-      githubLink: '#',
-      liveLink: '#'
-    },
-    {
-      id: 3,
-      name: 'El Pollo Loco',
-      img: 'assets/img/portfolio/elpolloloco.png',
-      description: 'Description',
-      skills: 'What | U | Use',
-      githubLink: '#',
-      liveLink: '#'
-    },
-    {
-      id: 4,
-      name: 'Pokedex',
-      img: 'assets/img/portfolio/pokedex.png',
-      description: 'Description',
-      skills: 'What | U | Use',
-      githubLink: '#',
-      liveLink: '#'
-    },
-  ];
+  constructor(private translate: TranslateService) {
+    this.hoverStates = [];
 
-  constructor() {
-    this.hoverStates = Array(this.projects.length).fill(false);
+    this.translate.get('projects').subscribe((translations) => {
+      this.projects = [
+        {
+          id: 1,
+          name: translations['join']['name'],
+          img: 'assets/img/portfolio/join.png',
+          description: translations['join']['description'],
+          skills: translations['join']['skills'],
+          githubLink: '#',
+          liveLink: '#',
+        },
+        {
+          id: 2,
+          name: translations['dabubble']['name'],
+          img: 'assets/img/portfolio/dabubble.png',
+          description: translations['dabubble']['description'],
+          skills: translations['dabubble']['skills'],
+          githubLink: '#',
+          liveLink: '#',
+        },
+        {
+          id: 3,
+          name: translations['el-pollo-loco']['name'],
+          img: 'assets/img/portfolio/elpolloloco.png',
+          description: translations['el-pollo-loco']['description'],
+          skills: translations['el-pollo-loco']['skills'],
+          githubLink: '#',
+          liveLink: '#',
+        },
+        {
+          id: 4,
+          name: translations['pokedex']['name'],
+          img: 'assets/img/portfolio/pokedex.png',
+          description: translations['pokedex']['description'],
+          skills: translations['pokedex']['skills'],
+          githubLink: '#',
+          liveLink: '#',
+        },
+      ];
+    });
   }
 
   showAlternateContent(index: number) {

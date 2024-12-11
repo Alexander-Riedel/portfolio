@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-reviews',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './reviews.component.html',
   styleUrls: ['./reviews.component.scss', './reviews.responsive.scss']
 })
@@ -13,18 +14,18 @@ export class ReviewsComponent {
   reviews = [
     {
       image: 'assets/img/reviews/001.jpg',
-      text: `Alex really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.`,
-      author: 'V. Schuster - Team Partner'
+      textKey: 'review1.text',
+      authorKey: 'review1.author'
     },
     {
       image: 'assets/img/reviews/002.jpg',
-      text: `Alexander was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.`,
-      author: 'J. Müller - CEO'
+      textKey: 'review2.text',
+      authorKey: 'review2.author'
     },
     {
       image: 'assets/img/reviews/003.jpg',
-      text: `It was a great pleasure to work with Alexander. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well.`,
-      author: 'A. Weber - Developer'
+      textKey: 'review3.text',
+      authorKey: 'review3.author'
     }
   ];
 

@@ -15,5 +15,57 @@
     "another-skill": "another skill",
     "feel-free-to-contact": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
     "get-in-touch": "Get in touch",
-    "my-journey": "My journey has involved working on diverse projects, employing a range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to Continously enhance my skills and stay ahead in the ever-evolving landscape of web development."
+    "my-journey": "My journey has involved working on diverse projects, employing a range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to Continously enhance my skills and stay ahead in the ever-evolving landscape of web development.",
+    "explore-my-work": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "contact": "Contact",
+    "got-a-problem": "Got a problem to solve?",
+    "contact-me-through-form": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "need-a-developer": "Need a Frontend developer?",
+    "contact-me": "Contact me!",
+    "your-name": "Your name...",
+    "enter-name": "Please enter a name",
+    "your-email": "Your email...",
+    "enter-email": "Please enter a valid email",
+    "your-message": "Your message...",
+    "enter-message": "Please enter a message",
+    "ive-read": "I've read the",
+    "privacy-policy": "privacy policy",
+    "and-agree": "and agree to the processing of my data as outlined.",
+    "checkbox-message": "Please accept the privace policy.",
+    "send-message": "Send message",
+    "legal-notice": "Legal Notice",
+    "projects": {
+        "join": {
+            "name": "Join",
+            "description": "Task management tool.",
+            "skills": "JavaScript | HTML | CSS"
+        },
+        "dabubble": {
+            "name": "DABubble",
+            "description": "Social media platform prototype.",
+            "skills": "Angular | Firebase | TypeScript"
+        },
+        "el-pollo-loco": {
+            "name": "El Pollo Loco",
+            "description": "2D browser game.",
+            "skills": "JavaScript | HTML | CSS"
+        },
+        "pokedex": {
+            "name": "Pokedex",
+            "description": "Pokémon encyclopedia.",
+            "skills": "API | JavaScript | HTML"
+        }
+    },
+    "review1": {
+        "text": "Alex really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+        "author": "V. Schuster - Team Partner"
+    },
+    "review2": {
+        "text": "Alexander was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
+        "author": "J. Müller - CEO"
+    },
+    "review3": {
+        "text": "It was a great pleasure to work with Alexander. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well.",
+        "author": "A. Weber - Developer"
+    }
 }

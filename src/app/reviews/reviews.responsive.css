@@ -1,3 +1,9 @@
+@media screen and (max-width:1600px) {
+    .review-picture-box {
+        min-width: 360px;
+    }
+}
+
 @media screen and (max-width:1400px) {
     .reviews-container {
         margin: 200px 0 0 128px;
@@ -14,7 +20,7 @@
     }
 
     .review-picture-box {
-        min-width: 360px;
+        min-width: 320px;
     }
 }
 
@@ -28,7 +34,7 @@
     }
 
     .review-box {
-        max-width: 600px;
+        max-width: 700px;
     }
 
     .review-picture-box {
@@ -51,6 +57,16 @@
         gap: 24px;
     }
 
+    .review-box {
+        max-width: 600px;
+        height: unset;
+        min-height: 275px;
+    }
+
+    .review-box-content {
+        gap: 32px;
+    }
+
     .review-picture-box {
         min-width: unset;
         display: flex;
@@ -69,7 +85,9 @@
     }
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+
+}
 
 @media screen and (max-width:576px) {}
 

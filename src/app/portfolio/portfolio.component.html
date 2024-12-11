@@ -4,15 +4,12 @@
 
         <div class="portfolio-headline">
             <div class="portfolio-headline-line"></div>
-            <h2>Portfolio</h2>
+            <h2>{{ 'portfolio' | translate }}</h2>
         </div>
-
-        <div class="portfolio-headline-text">
-            Explore a selection of my work here - Interact with projects to see my skills in action.
-        </div>
+        <div class="portfolio-headline-text">{{ 'explore-my-work' | translate }}</div>
 
         <div class="portfolio-project-container">
-
+            
             <div class="portfolio-project" *ngFor="let project of projects; index as i"
                 (mouseenter)="showAlternateContent(i)" (mouseleave)="showOriginalContent(i)">
 

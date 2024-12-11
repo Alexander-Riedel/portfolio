@@ -3,7 +3,7 @@
     <div class="contact-container">
         <div class="contact-headline">
             <div class="contact-headline-space"></div>
-            <h2>Contact</h2>
+            <h2>{{ 'contact' | translate }}</h2>
             <div class="contact-headline-line"></div>
         </div>
 
@@ -12,12 +12,11 @@
             <div class="contact-left">
                 <div class="contact-headline2">
                     <div class="contact-headline2-line"></div>
-                    <h3>Got a problem to solve?</h3>
+                    <h3>{{ 'got-a-problem' | translate }}</h3>
                 </div>
                 <div class="contact-left-text">
-                    <div>Contact me through this form, I am interested in hearing from you, knowing your ideas and
-                        contributing to your projects with my work.</div>
-                    <div>Need a Frontend developer? <b>Contact me!</b></div>
+                    <div>{{ 'contact-me-through-form' | translate }}</div>
+                    <div>{{ 'need-a-developer' | translate }} <b>{{ 'contact-me' | translate }}</b></div>
                 </div>
             </div>
 
@@ -26,24 +25,29 @@
 
                     <div class="form-name">
                         <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
-                            placeholder="Your name..." required>
-                        <span *ngIf="name.invalid && (name.touched || contactForm.submitted)">Please enter a name</span>
+                            placeholder="{{ 'your-name' | translate }}" required>
+                        <span *ngIf="name.invalid && (name.touched || contactForm.submitted)">
+                            {{ 'enter-name' | translate }}
+                        </span>
                     </div>
 
                     <div class="form-email">
                         <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                            placeholder="Your email..." required
+                            placeholder="{{ 'your-email' | translate }}" required
                             pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-äöüßÄÖÜ]+(\.[a-zA-Z]{2,})+$">
-                        <span *ngIf="email.invalid && (email.touched || contactForm.submitted)">Please enter a valid
-                            email</span>
+                        <span *ngIf="email.invalid && (email.touched || contactForm.submitted)">
+                            {{ 'enter-email' | translate }}
+                        </span>
                     </div>
 
                     <div class="form-message">
                         <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message"
-                            name="message" placeholder="Write something..." style="height:200px" required></textarea>
+                            name="message" placeholder="{{ 'your-message' | translate }}" style="height:200px"
+                            required></textarea>
 
-                        <span *ngIf="message.invalid && (message.touched || contactForm.submitted)">Please enter a
-                            message</span>
+                        <span *ngIf="message.invalid && (message.touched || contactForm.submitted)">
+                            {{ 'enter-message' | translate }}
+                        </span>
                     </div>
 
                     <div class="contact-policy-check">
@@ -56,7 +60,6 @@
                                     <path d="M2 8.36364L6.23077 12L13 2"></path>
                                 </svg>
                             </div>
-                            <!-- Gooey-->
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                                 <defs>
                                     <filter id="goo-12">
@@ -70,16 +73,18 @@
                                 </defs>
                             </svg>
                         </div>
-                        <span>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as
-                            outlined.</span>
+                        <span>
+                            {{ 'ive-read' | translate }} <a href="#">{{ 'privacy-policy' | translate }}</a> {{
+                            'and-agree' | translate }}
+                        </span>
 
                         <span *ngIf="checkbox.invalid && (checkbox.touched || contactForm.submitted)"
                             class="checkbox-message">
-                            Please accept the privace policy.
+                            {{ 'checkbox-message' | translate }}
                         </span>
                     </div>
 
-                    <input type="submit" value="Send message &#058;&#041;"
+                    <input type="submit" value="{{ 'send-message' | translate }} &#058;&#041;"
                         [disabled]="!contactForm.form.valid || !contactData.policyAccepted">
 
                 </form>

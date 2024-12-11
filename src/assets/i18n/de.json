@@ -1,3 +1,71 @@
 {
-    "about-me": "Über mich"
+    "about-me": "Über mich",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "i-am": "Ich bin",
+    "frontend-developer": "FRONTEND-ENTWICKLER",
+    "lets-talk": "Lass uns reden!",
+    "scroll-down": "Runter scrollen",
+    "hey-there": "Hallo und herzlich willkommen! Mein Name ist Alexander. Ich bin leidenschaftlicher Frontend-Entwickler mit dem Fokus auf die Gestaltung intuitiver und ansprechender digitaler Erlebnisse. Mit einem ausgeprägten Gespür für Problemlösungen und einem hohen Anspruch an Qualität spezialisiere ich mich darauf, komplexe Konzepte in funktionale und ästhetische Designs zu übersetzen.",
+    "lets-connect": "Lassen Sie uns gemeinsam innovative und beeindruckende Projekte realisieren!",
+    "location": "Ich arbeite flexibel - sei es vor Ort in Norderstedt und Umgebung oder remote - und passe mich unterschiedlichen Arbeitsumfeldern problemlos an.",
+    "bulb": "Persönliche Weiterentwicklung liegt mir am Herzen, weshalb ich stets offen für neue Herausforderungen bin, um meine Fähigkeiten und mein Wissen kontinuierlich auszubauen.",
+    "puzzle": "Für mich ist Programmieren mehr als das Schreiben von Code - es ist eine kreative Form, Probleme zu lösen. Meine Stärke liegt darin, technische Komplexität in einfache und benutzerfreundliche Lösungen umzuwandeln. So unterstütze ich Sie dabei, Ihre Ziele zu erreichen und Ihre Ideen zum Leben zu erwecken.",
+    "looking-for": "Auf der Suche nach",
+    "another-skill": "einer weiteren Fähigkeit",
+    "feel-free-to-contact": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein Wissen weiter auszubauen.",
+    "get-in-touch": "Kontakt aufnehmen",
+    "my-journey": "Mein Weg umfasste die Arbeit an vielfältigen Projekten, bei denen eine Vielzahl von Frontend-Technologien und Konzepten zum Einsatz kamen. Ich bin offen für neue Technologien und Methoden, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig wandelnden Welt der Webentwicklung auf dem neuesten Stand zu bleiben.",
+    "explore-my-work": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "contact": "Kontakt",
+    "got-a-problem": "Haben Sie ein Problem zu lösen?",
+    "contact-me-through-form": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "need-a-developer": "Brauchen Sie einen Frontend-Entwickler?",
+    "contact-me": "Kontaktieren Sie mich!",
+    "your-name": "Ihr Name...",
+    "enter-name": "Bitte geben Sie einen Namen ein",
+    "your-email": "Ihre E-Mail...",
+    "enter-email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "your-message": "Ihre Nachricht...",
+    "enter-message": "Bitte geben Sie eine Nachricht ein",
+    "ive-read": "Ich habe die",
+    "privacy-policy": "Datenschutzerklärung",
+    "and-agree": "gelesen und stimme der Verarbeitung meiner Daten gemäß der Erklärung zu.",
+    "checkbox-message": "Bitte akzeptieren Sie die Datenschutzerklärung.",
+    "send-message": "Nachricht senden",
+    "legal-notice": "Impressum",
+    "projects": {
+        "join": {
+            "name": "Join",
+            "description": "Aufgabenverwaltungstool.",
+            "skills": "JavaScript | HTML | CSS"
+        },
+        "dabubble": {
+            "name": "DABubble",
+            "description": "Prototyp einer Social-Media-Plattform.",
+            "skills": "Angular | Firebase | TypeScript"
+        },
+        "el-pollo-loco": {
+            "name": "El Pollo Loco",
+            "description": "2D-Browserspiel.",
+            "skills": "JavaScript | HTML | CSS"
+        },
+        "pokedex": {
+            "name": "Pokedex",
+            "description": "Pokémon-Enzyklopädie.",
+            "skills": "API | JavaScript | HTML"
+        }
+    },
+    "review1": {
+        "text": "Alex hielt das Team wirklich mit seiner großartigen Organisation und klaren Kommunikation zusammen. Ohne sein Engagement wären wir nicht so weit gekommen.",
+        "author": "V. Schuster - Team-Partner"
+    },
+    "review2": {
+        "text": "Alexander war ein großartiger Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, trugen maßgeblich dazu bei, dass wir unsere Ziele erreichten.",
+        "author": "J. Müller - Geschäftsführer"
+    },
+    "review3": {
+        "text": "Es war eine große Freude, mit Alexander zu arbeiten. Er weiß, wie man Teammitglieder motiviert und dazu bringt, die bestmögliche Arbeit zu leisten, und bringt immer neue Ideen ein. Was das Wohlbefinden der Gruppenmitglieder betrifft, war er immer präsent und bereit, zuzuhören und zu helfen, mit einer großartigen Portion Humor.",
+        "author": "A. Weber - Entwickler"
+    }
 }

@@ -6,16 +6,21 @@
                 <img src="assets/img/reviews/quote.svg" alt="">
             </div>
             <div class="review-box-content">
-                <div class="review" id="review-{{[currentIndex]}}">{{ reviews[currentIndex].text }}</div>
+                <div class="review" id="review-{{[currentIndex]}}">
+                    {{ reviews[currentIndex].textKey | translate }}
+                </div>
                 <div class="review-author" id="review-author-{{[currentIndex]}}">
                     <div class="review-author-line"></div>
-                    <div class="review-author-name">{{ reviews[currentIndex].author }}</div>
+                    <div class="review-author-name">
+                        {{ reviews[currentIndex].authorKey | translate }}
+                    </div>
                 </div>
             </div>
         </div>
         <div class="review-picture-box">
             <div class="review-picture">
-                <img [src]="reviews[currentIndex].image" id="review-img-{{[currentIndex]}}" [alt]="'Image for ' + reviews[currentIndex].author">
+                <img [src]="reviews[currentIndex].image" id="review-img-{{[currentIndex]}}"
+                    [alt]="'Image for ' + (reviews[currentIndex].authorKey | translate)">
                 <div class="review-picture-line"></div>
             </div>
         </div>

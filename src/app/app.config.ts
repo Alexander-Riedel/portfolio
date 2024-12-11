@@ -4,7 +4,7 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 
-import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
+import { TranslateModule, TranslateLoader, TranslateService } from "@ngx-translate/core";
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
 
@@ -17,12 +17,25 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideHttpClient(),
-    importProvidersFrom([TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: httpLoaderFactory,
-        deps: [HttpClient],
+    importProvidersFrom([
+      TranslateModule.forRoot({
+        loader: {
+          provide: TranslateLoader,
+          useFactory: httpLoaderFactory,
+          deps: [HttpClient],
+        },
+      }),
+    ]),
+    {
+      provide: 'APP_INITIALIZER',
+      useFactory: (translate: TranslateService) => () => {
+        const savedLang = localStorage.getItem('language') || translate.getBrowserLang();
+        const defaultLang = savedLang?.match(/en|de/) ? savedLang : 'de';
+        translate.setDefaultLang('de'); // Fallback
+        translate.use(defaultLang);
       },
-    })])
+      deps: [TranslateService],
+      multi: true,
+    },
   ],
 };
