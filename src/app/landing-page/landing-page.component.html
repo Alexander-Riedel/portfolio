@@ -2,7 +2,9 @@
 <img class="landing-page-blue-shadow" src="assets/img/blue-shadow-1.svg" alt="" />
 <div class="landing-page-container">
     <div class="landing-page-headline-container">
-        <div class="landing-page-iam">{{ 'i-am' | translate }}</div>
+        <div class="landing-page-iam" [ngClass]="getLanguageClass()">
+            {{ 'i-am' | translate }}
+        </div>
         <div class="landing-page-name-container">
             <h1 class="landing-page-name">Alexander Riedel</h1>
             <span class="landing-page-slogan">{{ 'frontend-developer' | translate }}</span>

@@ -19,6 +19,18 @@ footer {
 .footer-name {
     font-size: 30px;
     font-weight: 700;
+
+    a {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+
+        span {
+            color: #9747FF;
+        }
+    }
 }
 
 .footer-middle {
