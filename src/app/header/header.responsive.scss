@@ -4,12 +4,11 @@
 
 @media screen and (max-width:1400px) {
     header {
-        padding: 0 100px;
+        padding: 0 64px;
     }
 }
 
 @media screen and (max-width:1200px) {
-
     header {
         padding: 0 40px;
 
@@ -70,6 +69,11 @@
             font-size: 32px;
         }
     }
+
+    nav.active {
+        min-height: calc(100dvh - 80px);
+        top: 80px;
+    }
 }
 
 @media screen and (max-width:768px) {}
@@ -80,5 +84,29 @@
             gap: 60px;
             font-size: 24px;
         }
+    }
+
+    .name {
+        a {
+            font-size: 24px;
+        }
+    }
+}
+
+@media screen and (max-width:468px) {
+    header {
+        height: 60px;
+        padding: 0 16px;
+    }
+
+    .name {
+        a {
+            letter-spacing: 4px;
+        }
+    }
+
+    nav.active {
+        min-height: calc(100dvh - 60px);
+        top: 60px;
     }
 }

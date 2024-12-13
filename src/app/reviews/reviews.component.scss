@@ -68,7 +68,6 @@
 
 .review-picture-box {
     height: 280px;
-    min-width: 430px;
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -90,6 +89,10 @@
             transform: scale(1.1);
         }
     }
+}
+
+.space {
+    display: none;
 }
 
 .review-picture-line {

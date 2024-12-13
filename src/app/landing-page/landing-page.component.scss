@@ -55,9 +55,17 @@
 .landing-page-iam {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    font-size: 90px;
     text-shadow: #141D2F 0px 0px 24px;
 }
+
+.landing-page-iam.deutsch {
+    font-size: 60px;
+}
+
+.landing-page-iam.english {
+    font-size: 90px;
+}
+
 
 .landing-page-name-container {
     display: flex;
@@ -104,7 +112,7 @@ h1 {
     }
 
     a {
-        transition: all 0.3s ease;
+        transition: all 0.125s ease;
 
         img {
             width: 40px;
@@ -112,7 +120,7 @@ h1 {
         }
 
         &:hover {
-            transform: scale(1.5);
+            transform: scale(1.25);
         }
     }
 }
@@ -120,10 +128,10 @@ h1 {
 .landing-page-scrolldown {
     writing-mode: vertical-lr;
     font-size: 24px;
-    transition: all 0.3s ease;
+    transition: all 0.125s ease;
 
     a {
-        color: #FFFFFF;
+        color: #FFFFFFAA;
         text-decoration: none;
     }
 
@@ -131,12 +139,4 @@ h1 {
         transform: scale(1.1);
     }
 
-}
-
-.deutsch {
-    font-size: 64px;
-}
-
-.englisch {
-    background-color: #e0e0e0;
 }

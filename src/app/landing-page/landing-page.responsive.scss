@@ -1,79 +1,155 @@
 @media screen and (max-width:1400px) {
-    h1 {
-        text-shadow: #000000 0px 0px 16px;
+    .landing-page-iam.deutsch {
+        font-size: 50px;
     }
 
-    .landing-page-iam {
+    .landing-page-iam.english {
         font-size: 72px;
-        text-shadow: #000000 0px 0px 16px;
     }
 
     .landing-page-slogan {
-        font-size: 60px;
-        line-height: 68px;
-        text-shadow: #000000 0px 0px 16px;
+        font-size: 70px;
+        line-height: 70px;
     }
 
-    .landing-page-scrolldown {
-        display: none;
+    .landing-page-bottom {
+        margin-right: 100px;
+        bottom: 42px;
     }
 }
 
 @media screen and (max-width:1200px) {
-    .landing-page-iam {
+    .landing-page-iam.deutsch {
+        font-size: 42px;
+    }
+
+    .landing-page-iam.english {
         font-size: 60px;
     }
 
     .landing-page-slogan {
-        font-size: 52px;
-        line-height: 60px;
+        font-size: 54px;
+        line-height: 54px;
+    }
+
+    .landing-page-bottom {
+        margin-right: 40px;
+        bottom: 36px;
+    }
+
+    .landing-page-scrolldown {
+        font-size: 20px;
     }
 }
 
 @media screen and (max-width:992px) {
-    .landing-page-iam {
+    .landing-page-container {
+        height: calc(100dvh - 80px);
+    }
+
+    .landing-page-iam.deutsch {
+        font-size: 35px;
+    }
+
+    .landing-page-iam.english {
         font-size: 48px;
     }
 
     .landing-page-slogan {
         font-size: 44px;
-        line-height: 48px;
+        line-height: 44px;
+    }
+
+    .landing-page-bottom {
+        margin-right: unset;
+        bottom: 32px;
+    }
+
+    .landing-page-scrolldown {
+        display: none;
+    }
+
+    .landing-page-btns {
+        .green-line {
+            width: calc(120px - 32px);
+        }
     }
 }
 
 @media screen and (max-width:768px) {
+    .landing-page-name-container {
+        align-items: center;
+        gap: 16px;
+    }
+
     img {
         max-width: 100%;
     }
 
     .landing-page-iam {
-        font-size: 36px;
+        display: none;
     }
 
     .landing-page-slogan {
         font-size: 38px;
         line-height: 40px;
     }
+
+    .landing-page-bottom {
+        bottom: 28px;
+    }
+
+    .landing-page-btns {
+        .green-line {
+            width: calc(90px - 32px);
+        }
+    }
 }
 
 @media screen and (max-width:576px) {
-    .landing-page-iam {
-        font-size: 30px;
-    }
-
     .landing-page-slogan {
         font-size: 28px;
         line-height: 32px;
     }
+
+    .landing-page-bottom {
+        bottom: 24px;
+    }
+
+    .landing-page-btns {
+        .green-line {
+            width: calc(60px - 32px);
+        }
+
+        a {
+            img {
+                width: 36px;
+                height: 36px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:468px) {
-    .landing-page-iam {
-        font-size: 22px;
+    .landing-page-container {
+        height: calc(100dvh - 60px);
     }
 
     .landing-page-slogan {
         font-size: 20px;
         line-height: 24px;
+    }
+
+    .landing-page-bottom {
+        bottom: 20px;
+    }
+
+    .landing-page-btns {
+        a {
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
     }
 }

@@ -20,13 +20,13 @@
 
 @media screen and (max-width:1200px) {
     .skills-img-container {
-        margin: 0 32px 0 64px;
+        margin: 0 20px 0 40px;
         gap: 32px;
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
 
     .skills-text-container {
-        margin-left: 32px;
+        margin-left: 20px;
         gap: 24px;
     }
 }
@@ -39,8 +39,8 @@
     }
 
     .skills-text-container {
-        margin-left: 64px;
-        margin-bottom: 64px;
+        margin-left: 32px;
+        margin-bottom: 128px;
         min-height: unset;
         width: unset;
         gap: 48px;
@@ -48,6 +48,10 @@
         a {
             display: none;
         }
+    }
+
+    .skills-text {
+        margin-right: 32px;
     }
 
     .skill-headline {
@@ -63,7 +67,7 @@
     }
 
     .skills-img-container {
-        margin: 0 64px 64px 64px;
+        margin: 0 32px 128px 32px;
         width: unset;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 80px;
@@ -74,9 +78,10 @@
         flex-direction: column;
         align-items: center;
         gap: 48px;
+        text-align: center;
 
         h3 {
-            margin-right: unset;
+            margin: 0;
         }
 
         span {
@@ -94,12 +99,65 @@
             box-shadow: 4px 4px 4px 0px #00000040;
             background-color: #70E61C;
             border: 1px solid #70E61C;
+
+            &:hover {
+                transform: scale(1.2);
+                box-shadow: none;
+                background-color: #9747FF;
+                border: 1px solid #9747FF;
+            }
+
+            &:active {
+                transform: scale(1.1);
+                box-shadow: none;
+                background-color: #FFFFFF;
+                border: 1px solid #FFFFFF;
+                color: #000000;
+            }
         }
     }
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .looking-for-responsive {
+        h3 {
+            margin: 0 20px;
+        }
 
-@media screen and (max-width:576px) {}
+        .skills-text {
+            margin: 0 64px 0 64px;
+        }
+    }
+}
 
-@media screen and (max-width:468px) {}
+@media screen and (max-width:576px) {
+    .skills-text-container {
+        margin-bottom: 64px;
+    }
+
+    .skills-img-container {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width:468px) {
+    .skills-text-container {
+        margin-bottom: 32px;
+    }
+
+    .skills-img-container {
+        margin: 0 20px 64px 20px;
+        gap: 32px;
+    }
+
+    .looking-for-responsive {
+        button {
+            padding: 12px 24px;
+            border-radius: 8px;
+        }
+
+        .skills-text {
+            margin: 0 32px 0 32px;
+        }
+    }
+}

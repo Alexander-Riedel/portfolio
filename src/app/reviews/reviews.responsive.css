@@ -1,6 +1,6 @@
 @media screen and (max-width:1600px) {
-    .review-picture-box {
-        min-width: 360px;
+    .review-box {
+        max-width: 800px;
     }
 }
 
@@ -19,8 +19,8 @@
         padding: 0 32px 16px 64px;
     }
 
-    .review-picture-box {
-        min-width: 320px;
+    .review-box {
+        max-width: 600px;
     }
 }
 
@@ -31,14 +31,6 @@
 
     .review-container {
         gap: 16px;
-    }
-
-    .review-box {
-        max-width: 700px;
-    }
-
-    .review-picture-box {
-        min-width: 320px;
     }
 
     .review-picture img {
@@ -58,7 +50,6 @@
     }
 
     .review-box {
-        max-width: 600px;
         height: unset;
         min-height: 275px;
     }
@@ -68,16 +59,28 @@
     }
 
     .review-picture-box {
-        min-width: unset;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
         width: 100%;
+        flex-grow: unset;
     }
 
     .review-picture {
-        aspect-ratio: unset;
-        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+            flex: 1;
+        }
+
+        img {
+            flex: 0;
+            max-width: 90%;
+            height: 90%;
+        }
+    }
+
+    .space {
+        display: block;
     }
 
     .review-picture-line {
@@ -86,9 +89,74 @@
 }
 
 @media screen and (max-width:768px) {
+    .review-box-quote {
+        display: none;
+    }
 
+    .review-box {
+        min-height: 240px;
+        max-width: unset;
+        margin: 0 32px;
+    }
+
+    .review {
+        padding: 16px 16px 0 16px;
+        font-size: 18px;
+    }
+
+    .review-author-name {
+        font-size: 16px;
+    }
 }
 
-@media screen and (max-width:576px) {}
+@media screen and (max-width:576px) {
+    .review-box {
+        min-height: 280px;
+        margin: 0 16px;
+    }
 
-@media screen and (max-width:468px) {}
+    .review {
+        font-size: 16px;
+    }
+
+    .review-author {
+        padding: 0 32px 16px 32px;
+        gap: 16px;
+    }
+
+    .review-author-name {
+        font-size: 14px;
+    }
+
+    .review-picture-box {
+        height: 200px;
+    }
+
+    .review-picture {
+        img {
+            height: 200px;
+        }
+    }
+}
+
+@media screen and (max-width:468px) {
+    .arrow-button {
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 8px;
+        border: 2px solid #70E61C00;
+    
+        &:hover {
+            border: 2px solid #70E61C;
+            border-radius: 50%;
+        }
+    }
+
+    .review-dots {
+        height: 32px;
+        gap: 10px;
+    }
+}

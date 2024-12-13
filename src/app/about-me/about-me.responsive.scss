@@ -13,7 +13,12 @@
     }
 }
 
-@media screen and (max-width:1200px) {}
+@media screen and (max-width:1200px) {
+    .about-me-container {
+        padding: 0 40px;
+        gap: 40px;
+    }
+}
 
 @media screen and (max-width:992px) {
     #about-me {
@@ -23,6 +28,7 @@
     }
 
     .about-me-container {
+        padding: 0 32px;
         flex-direction: column-reverse;
         gap: 128px;
     }
@@ -44,3 +50,27 @@
 @media screen and (max-width:768px) {}
 
 @media screen and (max-width:576px) {}
+
+@media screen and (max-width:468px) {
+    .about-me-container {
+        padding: 0 16px;
+        gap: 64px;
+    }
+
+    .about-me-highlight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    
+        img {
+            height: 50px;
+            width: 50px;
+            transition: all 0.3s ease;
+    
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
