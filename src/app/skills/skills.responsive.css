@@ -55,7 +55,7 @@
     }
 
     .skill-headline {
-        gap: 16px;
+        gap: 8px;
     }
 
     h2 {
@@ -141,8 +141,17 @@
 }
 
 @media screen and (max-width:468px) {
+    .skills-headline {
+        gap: 4px;
+    }
+
     .skills-text-container {
+        margin-left: 20px;
         margin-bottom: 32px;
+    }
+
+    .skills-text {
+        margin-right: 20px;
     }
 
     .skills-img-container {

@@ -37,7 +37,7 @@
         url('../src/assets/fonts/poppins-v21-latin-700.ttf') format('truetype'),
         /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
         url('../src/assets/fonts/poppins-v21-latin-700.svg#Poppins') format('svg');
-    /* Legacy iOS */
+        /* Legacy iOS */
 }
 
 html,
@@ -46,7 +46,6 @@ body {
 }
 
 body {
-    min-width: 320px;
     margin: 0;
     padding: 0;
     background-color: #141D2F;
@@ -162,13 +161,6 @@ button {
         font-size: 56px;
         line-height: 54px;
     }
-
-    /*
-    h2 {
-        font-size: 45px;
-        line-height: 54px;
-    }
-    */
 
     h3 {
         font-size: 32px;

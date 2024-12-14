@@ -18,6 +18,14 @@
 }
 
 @media screen and (max-width:1200px) {
+    .portfolio-headline-text {
+        margin: 32px 40px 0 40px;
+    }
+
+    .portfolio-headline-line {
+        width: 20px;
+    }
+
     .portfolio-project-container {
         gap: 32px;
     }
@@ -28,22 +36,47 @@
     }
 
     .portfolio-project-btns {
-        gap: 48px;
+        gap: 36px;
     }
 
     .portfolio-project-text {
         gap: 16px;
     }
+
+    .portfolio-project-description {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .portfolio-project-skills {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
 @media screen and (max-width:992px) {
+    .portfolio-headline {
+        gap: 8px;
+    }
+
     .portfolio-headline-text {
-        margin: 48px 64px 0 64px;
+        margin: 32px 32px 0 32px;
+    }
+
+    .portfolio-headline-line {
+        width: 20px;
+    }
+
+    .portfolio-project-container {
+        margin: 48px 32px 0 32px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
     }
 
     .portfolio-project {
-        height: 500px;
-        width: 500px;
+        height: 550px;
+        width: 550px;
     }
 }
 
@@ -51,8 +84,97 @@
     img {
         max-width: 100%;
     }
+
+    .portfolio-project {
+        height: 420px;
+        width: 420px;
+    }
 }
 
-@media screen and (max-width:576px) {}
+@media screen and (max-width:576px) {
+    .portfolio-project {
+        height: 320px;
+        width: 320px;
+    }
 
-@media screen and (max-width:468px) {}
+    .portfolio-project-btns {
+        gap: 33px;
+    }
+
+    .protfolio-github-btn {
+        width: 114px;
+        height: 49px;
+        font-size: 16px;
+    }
+
+    .protfolio-livetest-btn {
+        width: 124px;
+        height: 49px;
+        font-size: 16px;
+    }
+
+    .portfolio-project-text {
+        gap: 16px;
+
+        h3 {
+            font-size: 28px;
+        }
+    }
+}
+
+@media screen and (max-width:468px) {
+    .portfolio-headline {
+        gap: 4px;
+    }
+
+    .portfolio-headline-text {
+        margin: 32px 20px 0 20px;
+    }
+
+    .portfolio-headline-line {
+        width: 14px;
+    }
+
+    .portfolio-project-container {
+        margin: 48px 20px 0 20px;
+    }
+
+    .portfolio-project {
+        height: 240px;
+        width: 240px;
+    }
+
+    .portfolio-project-btns {
+        gap: 16px;
+    }
+
+    .protfolio-github-btn {
+        width: 90px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .protfolio-livetest-btn {
+        width: 108px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .portfolio-project-text {    
+            gap: 8px;
+
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    .portfolio-project-description {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .portfolio-project-skills {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

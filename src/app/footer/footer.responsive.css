@@ -13,12 +13,16 @@
 
 @media screen and (max-width:992px) {
     .footer-container {
-        margin: 48px 64px;
+        margin: 48px 0;
         flex-direction: column;
     }
 
     .legal-notice {
         display: none;
+    }
+
+    .footer-middle {
+        font-size: 20px;
     }
 
     .legal-notice-responsive {
@@ -28,6 +32,48 @@
 
 @media screen and (max-width:768px) {}
 
-@media screen and (max-width:576px) {}
+@media screen and (max-width:576px) {
+    .footer-name {
+        a {
+            font-size: 24px;
+        }
+    }
 
-@media screen and (max-width:468px) {}
+    .footer-middle {
+        font-size: 16px;
+    }
+
+    .legal-notice-responsive {
+        font-size: 14px;
+    }
+
+    .footer-right {
+        gap: 36px;
+    
+        a {
+            img {
+                width: 36px;
+                height: 36px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:468px) {
+    .footer-name {
+        a {
+            letter-spacing: 4px;
+        }
+    }
+
+    .footer-right {
+        gap: 32px;
+    
+        a {
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}

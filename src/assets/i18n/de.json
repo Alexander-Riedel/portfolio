@@ -37,22 +37,22 @@
     "projects": {
         "join": {
             "name": "Join",
-            "description": "Aufgabenverwaltungstool.",
+            "description": "Aufgabenverwaltungstool",
             "skills": "JavaScript | HTML | CSS"
         },
         "dabubble": {
             "name": "DABubble",
-            "description": "Prototyp einer Social-Media-Plattform.",
+            "description": "Social-Media-Plattform",
             "skills": "Angular | Firebase | TypeScript"
         },
         "el-pollo-loco": {
             "name": "El Pollo Loco",
-            "description": "2D-Browserspiel.",
+            "description": "2D-Browserspiel",
             "skills": "JavaScript | HTML | CSS"
         },
         "pokedex": {
             "name": "Pokedex",
-            "description": "Pokémon-Enzyklopädie.",
+            "description": "Pokémon-Enzyklopädie",
             "skills": "API | JavaScript | HTML"
         }
     },

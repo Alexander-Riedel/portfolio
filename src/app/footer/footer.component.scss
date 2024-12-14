@@ -42,7 +42,7 @@ footer {
     gap: 42px;
 
     a {
-        transition: all 0.3s ease;
+        transition: all 0.125s ease;
 
         img {
             width: 40px;
@@ -50,7 +50,7 @@ footer {
         }
 
         &:hover {
-            transform: scale(1.5);
+            transform: scale(1.25);
         }
     }
 }

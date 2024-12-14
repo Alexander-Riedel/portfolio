@@ -74,8 +74,8 @@
 
         img {
             flex: 0;
-            max-width: 90%;
-            height: 90%;
+            max-width: 240px;
+            height: 240px;
         }
     }
 
@@ -107,6 +107,13 @@
     .review-author-name {
         font-size: 16px;
     }
+
+    .review-picture {
+        img {
+            max-width: 200px;
+            height: 200px;
+        }
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -115,13 +122,24 @@
         margin: 0 16px;
     }
 
+    .review-box-content {
+        gap: 16px;
+    }
+
     .review {
         font-size: 16px;
     }
 
     .review-author {
         padding: 0 32px 16px 32px;
-        gap: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .review-author-line {
+        width: 150px;
+        border-radius: 5px;
     }
 
     .review-author-name {
@@ -134,7 +152,8 @@
 
     .review-picture {
         img {
-            height: 200px;
+            max-width: 180px;
+            height: 180px;
         }
     }
 }
@@ -158,5 +177,12 @@
     .review-dots {
         height: 32px;
         gap: 10px;
+    }
+
+    .review-picture {
+        img {
+            max-width: 160px;
+            height: 160px;
+        }
     }
 }
