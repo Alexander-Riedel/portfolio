@@ -55,6 +55,36 @@ footer {
     }
 }
 
+.legal-notice,
+.legal-notice-responsive {
+    display: flex;
+
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            &::after {
+                transform: translateX(0);
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: -1px;
+            bottom: 0;
+            height: 2px;
+            width: 50%;
+            background-color: #70E61C;
+            transform: translateX(-100%);
+            transition: transform 0.250s ease;
+        }
+    }
+}
+
 .legal-notice-responsive {
     display: none;
 }

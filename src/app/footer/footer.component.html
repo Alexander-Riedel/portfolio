@@ -2,7 +2,11 @@
     <div class="footer-container">
         <div class="footer-left">
             <div class="footer-name"><a href="#">ALE<span>X</span>ANDER</a></div>
-            <div class="legal-notice">{{ 'legal-notice' | translate }}</div>
+            <div class="legal-notice">
+                <a [routerLink]="currentLang === 'de' ? '/impressum' : '/legal-notice'">
+                    {{ 'legal-notice.title' | translate }}
+                </a>
+            </div>
         </div>
         <div class="footer-middle">&#169; Alexander Riedel 2024</div>
         <div class="footer-right">
@@ -10,6 +14,10 @@
             <a href="#contact"><img src="assets/img/email.svg" alt=""></a>
             <a href="https://www.linkedin.com/in/-alexanderriedel-/"><img src="assets/img/linkedin.svg" alt=""></a>
         </div>
-        <div class="legal-notice-responsive">{{ 'legal-notice' | translate }}</div>
+        <div class="legal-notice-responsive">
+            <a [routerLink]="currentLang === 'de' ? '/impressum' : '/legal-notice'">
+                {{ 'legal-notice.title' | translate }}
+            </a>
+        </div>
     </div>
 </footer>

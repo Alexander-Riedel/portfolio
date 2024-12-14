@@ -33,7 +33,6 @@
     "and-agree": "gelesen und stimme der Verarbeitung meiner Daten gemäß der Erklärung zu.",
     "checkbox-message": "Bitte akzeptieren Sie die Datenschutzerklärung.",
     "send-message": "Nachricht senden",
-    "legal-notice": "Impressum",
     "projects": {
         "join": {
             "name": "Join",
@@ -67,5 +66,13 @@
     "review3": {
         "text": "Es war eine große Freude, mit Alexander zu arbeiten. Er weiß, wie man Teammitglieder motiviert und dazu bringt, die bestmögliche Arbeit zu leisten, und bringt immer neue Ideen ein. Was das Wohlbefinden der Gruppenmitglieder betrifft, war er immer präsent und bereit, zuzuhören und zu helfen, mit einer großartigen Portion Humor.",
         "author": "A. Weber - Entwickler"
+    },
+    "legal-notice": {
+        "title": "Impressum",
+        "responsible": "Verantwortlich für den Inhalt:",
+        "address": "Lütjenmoor 26",
+        "city": "22850 Norderstedt",
+        "phone": "Telefon",
+        "email": "kontakt@alexanderriedel.de"
     }
 }

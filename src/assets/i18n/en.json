@@ -33,7 +33,6 @@
     "and-agree": "and agree to the processing of my data as outlined.",
     "checkbox-message": "Please accept the privace policy.",
     "send-message": "Send message",
-    "legal-notice": "Legal Notice",
     "projects": {
         "join": {
             "name": "Join",
@@ -67,5 +66,13 @@
     "review3": {
         "text": "It was a great pleasure to work with Alexander. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well.",
         "author": "A. Weber - Developer"
+    },
+    "legal-notice": {
+        "title": "Legal Notice",
+        "responsible": "Responsible for the content:",
+        "address": "Luetjenmoor 26",
+        "city": "22850 Norderstedt",
+        "phone": "Phone",
+        "email": "contact@alexanderriedel.de"
     }
 }
