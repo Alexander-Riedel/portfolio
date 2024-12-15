@@ -86,10 +86,10 @@
                         </span>
                     </div>
 
-                    <div *ngIf="successMessage" class="alert alert-success">
+                    <div *ngIf="successMessage" class="alert alert-success" [ngClass]="{'alert-show': showAlert}">
                         {{ successMessage }}
                     </div>
-                    <div *ngIf="errorMessage" class="alert alert-danger">
+                    <div *ngIf="errorMessage" class="alert alert-danger" [ngClass]="{'alert-show': showAlert}">
                         {{ errorMessage }}
                     </div>
 

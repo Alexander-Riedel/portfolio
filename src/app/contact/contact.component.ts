@@ -15,6 +15,9 @@ import { RouterModule, Router } from '@angular/router';
 export class ContactformComponent {
 
   currentLang: string;
+  successMessage = '';
+  errorMessage = '';
+  showAlert = false;
 
   constructor(private translate: TranslateService, private router: Router) {
     this.currentLang = translate.currentLang || 'de';
@@ -51,26 +54,41 @@ export class ContactformComponent {
     },
   };
 
-  successMessage = '';
-  errorMessage = '';
-
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: () => {
-            this.successMessage = 'Email successfully sent!';
-            this.errorMessage = '';
-            ngForm.resetForm();
+            this.translate.get('banner.success').subscribe((message) => {
+              this.successMessage = message;
+              this.errorMessage = '';
+              this.displayAlert();
+              ngForm.resetForm();
+            });
           },
           error: (error) => {
             console.error('Error:', error);
-            this.successMessage = '';
-            this.errorMessage = 'Error sending email. Please try again.';
+            this.translate.get('banner.error').subscribe((message) => {
+              this.successMessage = '';
+              this.errorMessage = message;
+              this.displayAlert();
+            });
           },
-          complete: () => console.info('send post complete'),
         });
     }
+  }
+
+  displayAlert() {
+    this.showAlert = true;
+  
+    setTimeout(() => {
+      this.showAlert = false;
+  
+      setTimeout(() => {
+        this.successMessage = '';
+        this.errorMessage = '';
+      }, 500);
+    }, 5000);
   }
 
   validateForm(form: NgForm): void {

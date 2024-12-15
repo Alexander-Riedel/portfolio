@@ -94,7 +94,7 @@
             span {
                 position: absolute;
                 font-size: 14px;
-                color: #FF0000;
+                color: #E61C40;
                 top: 22px;
                 right: 12px;
             }
@@ -152,7 +152,7 @@ textarea {
     .checkbox-message {
         position: absolute;
         font-size: 14px;
-        color: #FF0000;
+        color: #E61C40;
         top: -26px;
         left: 0;
     }
@@ -359,16 +359,24 @@ input[type=submit]:disabled {
     margin: 15px 0;
     border: 1px solid transparent;
     border-radius: 4px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .alert-success {
-    color: #3c763d;
+    color: #70E61C;
     background-color: #dff0d8;
     border-color: #d6e9c6;
 }
 
+.alert-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .alert-danger {
-    color: #a94442;
+    color: #E61C40;
     background-color: #f2dede;
     border-color: #ebccd1;
 }

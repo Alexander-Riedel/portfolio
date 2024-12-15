@@ -74,5 +74,9 @@
         "city": "22850 Norderstedt",
         "phone": "Telefon",
         "email": "kontakt@alexanderriedel.de"
+    },
+    "banner": {
+        "success": "E-Mail erfolgreich gesendet!",
+        "error": "Fehler beim Senden der E-Mail. Bitte versuchen Sie es erneut."
     }
 }
