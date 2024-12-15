@@ -51,17 +51,25 @@ export class ContactformComponent {
     },
   };
 
+  successMessage = '';
+  errorMessage = '';
+
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
-      if (!this.mailTest) {
-        this.http.post(this.post.endPoint, this.post.body(this.contactData))
-          .subscribe({
-            next: () => console.log('Email sent successfully'),
-            error: (error) => console.error('Email sending error:', error),
-            complete: () => console.info('send post complete'),
-          });
-      }
-      ngForm.resetForm();
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: () => {
+            this.successMessage = 'Email successfully sent!';
+            this.errorMessage = '';
+            ngForm.resetForm();
+          },
+          error: (error) => {
+            console.error('Error:', error);
+            this.successMessage = '';
+            this.errorMessage = 'Error sending email. Please try again.';
+          },
+          complete: () => console.info('send post complete'),
+        });
     }
   }
 
