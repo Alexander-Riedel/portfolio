@@ -19,8 +19,8 @@
 
                 <div class="portfolio-project-hover" [class.d]="hoverStates[i]" [class.dn]="!hoverStates[i]">
                     <div class="portfolio-project-btns">
-                        <a [href]="project.githubLink"><button class="protfolio-github-btn">GitHub</button></a>
-                        <a [href]="project.liveLink"><button class="protfolio-livetest-btn">Live Test</button></a>
+                        <a [href]="project.githubLink" target="_blank"><button class="protfolio-github-btn">GitHub</button></a>
+                        <a [href]="project.liveLink" target="_blank"><button class="protfolio-livetest-btn">Live Test</button></a>
                     </div>
                     <div class="portfolio-project-text">
                         <h3>{{ project.name }}</h3>

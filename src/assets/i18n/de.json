@@ -39,20 +39,10 @@
             "description": "Aufgabenverwaltungstool",
             "skills": "JavaScript | HTML | CSS"
         },
-        "dabubble": {
-            "name": "DABubble",
-            "description": "Social-Media-Plattform",
-            "skills": "Angular | Firebase | TypeScript"
-        },
         "el-pollo-loco": {
             "name": "El Pollo Loco",
             "description": "2D-Browserspiel",
             "skills": "JavaScript | HTML | CSS"
-        },
-        "pokedex": {
-            "name": "Pokedex",
-            "description": "Pokémon-Enzyklopädie",
-            "skills": "API | JavaScript | HTML"
         }
     },
     "review1": {
