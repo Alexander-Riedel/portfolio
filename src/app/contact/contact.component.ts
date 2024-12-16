@@ -12,6 +12,7 @@ import { RouterModule, Router } from '@angular/router';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss', './contact.responsive.scss']
 })
+
 export class ContactformComponent {
 
   currentLang: string;
@@ -98,5 +99,4 @@ export class ContactformComponent {
       this.onSubmit(form);
     }
   }
-
 }

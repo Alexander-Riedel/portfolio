@@ -206,6 +206,11 @@ input[type=submit]:disabled {
     }
 }
 
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+    border: 1px solid #E61C40;
+}
+
 .checkbox-wrapper-12 {
     position: relative;
 }

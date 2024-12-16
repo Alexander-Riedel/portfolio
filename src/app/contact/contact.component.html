@@ -74,10 +74,10 @@
                             </svg>
                         </div>
                         <span>
-                            {{ 'ive-read' | translate }} <a
-                                [routerLink]="currentLang === 'de' ? '/datenschutzerklaerung' : '/privacy-policy'"
-                                target="_blank">{{ 'privacy-policy' | translate }}</a> {{
-                            'and-agree' | translate }}
+                            {{ 'ive-read' | translate }}
+                            <a [routerLink]="currentLang === 'de' ? '/datenschutzerklaerung' : '/privacy-policy'">
+                                {{ 'privacy-policy' | translate }}
+                            </a> {{ 'and-agree' | translate }}
                         </span>
 
                         <span *ngIf="checkbox.invalid && (checkbox.touched || contactForm.submitted)"
