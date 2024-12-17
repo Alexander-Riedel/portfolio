@@ -37,7 +37,7 @@
         url('../src/assets/fonts/poppins-v21-latin-700.ttf') format('truetype'),
         /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
         url('../src/assets/fonts/poppins-v21-latin-700.svg#Poppins') format('svg');
-        /* Legacy iOS */
+    /* Legacy iOS */
 }
 
 html,
@@ -48,7 +48,6 @@ body {
 body {
     margin: 0;
     padding: 0;
-    background-color: #141D2F;
     color: #FFFFFF;
     font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -95,6 +94,19 @@ button {
     align-content: center;
     justify-content: center;
     align-items: center;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #14142E;
+}
+
+.content-container {
+    max-width: 1920px;
+    width: 100%;
+    background-color: #141D2F;
+    outline: 4px solid #70E61C;
 }
 
 @media screen and (max-width:1400px) {

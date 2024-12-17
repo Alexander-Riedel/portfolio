@@ -1,7 +1,7 @@
 <section id="contact">
 
     <div class="contact-container">
-        <div class="contact-headline">
+        <div class="contact-headline" data-aos="fade-left">
             <div class="contact-headline-space"></div>
             <h2>{{ 'contact' | translate }}</h2>
             <div class="contact-headline-line"></div>
@@ -9,7 +9,7 @@
 
         <div class="contact">
 
-            <div class="contact-left">
+            <div class="contact-left" data-aos="fade-right">
                 <div class="contact-headline2">
                     <div class="contact-headline2-line"></div>
                     <h3>{{ 'got-a-problem' | translate }}</h3>
@@ -20,7 +20,7 @@
                 </div>
             </div>
 
-            <div class="contact-right">
+            <div class="contact-right" data-aos="fade-left">
                 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
                     <div class="form-name">
@@ -75,7 +75,7 @@
                         </div>
                         <span>
                             {{ 'ive-read' | translate }}
-                            <a [routerLink]="currentLang === 'de' ? '/datenschutzerklaerung' : '/privacy-policy'">
+                            <a target="_blank" [routerLink]="currentLang === 'de' ? '/datenschutzerklaerung' : '/privacy-policy'">
                                 {{ 'privacy-policy' | translate }}
                             </a> {{ 'and-agree' | translate }}
                         </span>
@@ -100,9 +100,10 @@
             </div>
         </div>
 
-        <div class="contact-right-shadow">
-            <img src="assets/img/purple-shadow-2.svg" alt="">
-        </div>
+    </div>
+    <a href="#home"><img class="top" src="assets/img/top.svg" alt="Top"></a>
 
+    <div class="contact-right-shadow">
+        <img src="assets/img/purple-shadow-2.svg" alt="">
     </div>
 </section>

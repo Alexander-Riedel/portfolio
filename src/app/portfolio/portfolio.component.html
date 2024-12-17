@@ -2,16 +2,17 @@
 
     <div class="portfolio-container">
 
-        <div class="portfolio-headline">
+        <div class="portfolio-headline" data-aos="fade-right">
             <div class="portfolio-headline-line"></div>
             <h2>{{ 'portfolio' | translate }}</h2>
         </div>
-        <div class="portfolio-headline-text">{{ 'explore-my-work' | translate }}</div>
+        <div class="portfolio-headline-text" data-aos="fade-right">{{ 'explore-my-work' | translate }}</div>
 
         <div class="portfolio-project-container">
             
             <div class="portfolio-project" *ngFor="let project of projects; index as i"
-                (mouseenter)="showAlternateContent(i)" (mouseleave)="showOriginalContent(i)">
+                (mouseenter)="showAlternateContent(i)" (mouseleave)="showOriginalContent(i)"
+                data-aos="flip-down">
 
                 <div class="portfolio-project-img" [class.d]="!hoverStates[i]" [class.dn]="hoverStates[i]">
                     <img [src]="project.img" [alt]="project.name" [class.fad-in]="!hoverStates[i]">
@@ -33,13 +34,13 @@
 
         </div>
 
-        <div class="portfolio-right-shadow">
-            <img src="assets/img/blue-shadow-2.svg" alt="">
-        </div>
-        <div class="portfolio-left-shadow">
-            <img src="assets/img/green-shadow-1.svg" alt="">
-        </div>
+    </div>
 
+    <div class="portfolio-right-shadow">
+        <img src="assets/img/blue-shadow-2.svg" alt="">
+    </div>
+    <div class="portfolio-left-shadow">
+        <img src="assets/img/green-shadow-1.svg" alt="">
     </div>
 
 </section>

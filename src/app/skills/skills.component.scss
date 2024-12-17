@@ -6,10 +6,11 @@
 
 .skills-container {
     display: flex;
-    //margin-top: 200px;
     scroll-margin-top: 110px;
     min-height: calc(100vh - 110px);
     position: relative;
+    z-index: 100;
+    overflow: hidden;
 }
 
 .skills-img-container {

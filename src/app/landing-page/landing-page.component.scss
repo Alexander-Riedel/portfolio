@@ -1,3 +1,7 @@
+#home {
+    scroll-margin-top: 110px;
+}
+
 .landing-page-container {
     position: relative;
     height: calc(100dvh - 110px);
@@ -9,7 +13,7 @@
 
     button {
         position: relative;
-        z-index: 1;
+        z-index: 101;
         padding: 15px 30px;
         border: 1px solid #70E61C;
         border-radius: 8px;
@@ -36,25 +40,26 @@
 .landing-page-purple-shadow {
     position: absolute;
     left: 0;
-    top: 20vh;
-    z-index: -999;
+    top: 0;
+    z-index: 1;
 }
 
 .landing-page-blue-shadow {
     position: absolute;
     right: 0;
-    top: 10vh;
-    z-index: -999;
+    top: -8vh;
+    z-index: 1;
 }
 
 .landing-page-headline-container {
     display: flex;
     align-items: center;
+    z-index: 100;
 }
 
 .landing-page-iam {
     writing-mode: vertical-lr;
-    transform: rotate(180deg);
+    //transform: rotate(180deg);
     text-shadow: #141D2F 0px 0px 24px;
 }
 
@@ -95,6 +100,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    z-index: 100;
 }
 
 .landing-page-btns {

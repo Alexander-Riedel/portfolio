@@ -10,7 +10,7 @@ import { TranslateModule, TranslateService } from "@ngx-translate/core";
   standalone: true,
   imports: [CommonModule, RouterOutlet, FooterComponent, HeaderComponent, TranslateModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 
 export class AppComponent {

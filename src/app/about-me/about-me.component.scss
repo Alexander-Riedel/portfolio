@@ -2,10 +2,12 @@
     margin-top: 120px;
     min-height: calc(100dvh - 110px);
     scroll-margin-top: 110px;
+    position: relative;
 }
 
 .about-me {
     position: relative;
+    z-index: 100;
 }
 
 .about-me-background {
@@ -14,7 +16,7 @@
     top: 30vh;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 .about-me-container {
@@ -22,6 +24,7 @@
     display: flex;
     align-items: center;
     gap: 128px;
+    z-index: 100;
 }
 
 .about-me-text {
