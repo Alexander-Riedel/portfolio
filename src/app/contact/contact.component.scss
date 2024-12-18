@@ -394,4 +394,9 @@ textarea.ng-invalid.ng-touched {
     bottom: 0;
     right: 150px;
     z-index: 100;
+    transition: all 0.125s ease;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
