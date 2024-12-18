@@ -1,8 +1,8 @@
 header {
+    width: 100%;
     height: 110px;
-    padding: 0 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: sticky;
     top: 0;
@@ -11,6 +11,18 @@ header {
     z-index: 1000;
     background-color: #141D2FDD;
     backdrop-filter: blur(5px);
+}
+
+.header-wrapper {
+    max-width: 1920px;
+    width: 100%;
+}
+
+.header-container {
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     nav {
         gap: 29px;
