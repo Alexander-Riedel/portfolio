@@ -39,15 +39,17 @@
 
 .landing-page-purple-shadow {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: -200px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1;
 }
 
 .landing-page-blue-shadow {
     position: absolute;
-    right: 0;
-    top: -8vh;
+    right: -200px;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1;
 }
 
@@ -144,5 +146,4 @@ h1 {
     &:hover {
         transform: scale(1.1);
     }
-
 }
