@@ -19,6 +19,11 @@
                     (click)="setActiveSection('portfolio')">
                     {{ 'portfolio' | translate }}
                 </a>
+                <div class="language-switcher">
+                    <a (click)="setLanguage?.('en')">EN</a>
+                    |
+                    <a (click)="setLanguage?.('de')">DE</a>
+                </div>
             </nav>
         </div>
     </div>

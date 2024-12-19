@@ -25,4 +25,9 @@ export class AppComponent {
     this.translate.setDefaultLang('de');
     this.translate.use(defaultLang);
   }
+
+  setLanguage(lang: string) {
+    this.translate.use(lang);
+    localStorage.setItem('language', lang);
+  }
 }

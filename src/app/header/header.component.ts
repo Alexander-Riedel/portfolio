@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -10,6 +10,8 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 
 export class HeaderComponent {
+
+  @Input() setLanguage?: (lang: string) => void;
 
   activeSection: string = '';
   menuOpen: boolean = false;

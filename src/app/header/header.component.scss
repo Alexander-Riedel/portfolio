@@ -27,6 +27,7 @@ header {
     nav {
         gap: 29px;
         display: flex;
+        align-items: center;
         font-size: 24px;
 
         a {
@@ -78,5 +79,15 @@ header {
             color: #9747FF;
         }
     }
+}
 
+.language-switcher {
+    font-size: 16px;
+    cursor: pointer;
+
+    a {
+        &::after {
+            content: none !important;
+        }
+    }
 }
