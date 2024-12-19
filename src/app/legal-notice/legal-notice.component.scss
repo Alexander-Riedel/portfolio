@@ -1,6 +1,18 @@
+#legal-notice {
+    scroll-margin-top: 150px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .legal-notice-container {
-    min-height: calc(100dvh - 110px - 295px);
     margin: 0 200px;
+    min-height: calc(100dvh - 110px - 295px);
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
 
     h1 {
         font-size: 2rem;
