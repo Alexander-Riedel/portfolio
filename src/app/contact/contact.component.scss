@@ -1,11 +1,16 @@
 #contact {
-    margin: 200px 0 100px 0;
-    min-height: calc(100dvh - 110px);
-    scroll-margin-top: 110px;
+    margin: 200px 0;
+    scroll-margin-top: 200px;
+    width: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-container {
+    width: 100%;
+    max-width: 1920px;
     position: relative;
     z-index: 100;
     overflow: hidden;

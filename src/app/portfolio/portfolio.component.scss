@@ -1,11 +1,16 @@
 #portfolio {
-    margin-top: 120px;
-    margin-bottom: 200px;
-    scroll-margin-top: 110px;
+    margin: 200px 0;
+    scroll-margin-top: 200px;
+    width: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-container {
+    width: 100%;
+    max-width: 1920px;
     position: relative;
     z-index: 100;
 }
