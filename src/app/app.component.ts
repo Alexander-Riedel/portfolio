@@ -22,8 +22,10 @@ export class AppComponent {
     const savedLang = localStorage.getItem('language') || this.translate.getBrowserLang();
     const defaultLang = savedLang?.match(/en|de/) ? savedLang : 'de';
 
-    this.translate.setDefaultLang('de');
+    this.translate.setDefaultLang(defaultLang);
     this.translate.use(defaultLang);
+    
+    document.documentElement.lang = defaultLang;
   }
 
   setLanguage(lang: string) {
