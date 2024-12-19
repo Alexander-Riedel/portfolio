@@ -9,11 +9,18 @@ import { RouterModule, Router } from '@angular/router';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss', './footer.responsive.scss']
 })
+
 export class FooterComponent {
   currentLang: string;
 
   constructor(private translate: TranslateService, private router: Router) {
     this.currentLang = translate.currentLang || 'de';
+  }
+
+  navigateToHome(): void {
+    this.router.navigate(['/']).then(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
 
   changeLang(lang: string): void {

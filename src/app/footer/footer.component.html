@@ -1,7 +1,7 @@
 <footer>
     <div class="footer-container">
         <div class="footer-left" data-aos="fade-right">
-            <div class="footer-name"><a href="">ALE<span>X</span>ANDER</a></div>
+            <div class="footer-name"><a (click)="navigateToHome()">ALE<span>X</span>ANDER</a></div>
             <div class="legal-notice">
                 <a [routerLink]="currentLang === 'de' ? '/impressum' : '/legal-notice'">
                     {{ 'legal-notice.title' | translate }}

@@ -400,6 +400,7 @@ textarea.ng-invalid.ng-touched {
     right: 150px;
     z-index: 100;
     transition: all 0.125s ease;
+    cursor: pointer;
 
     &:hover {
         transform: scale(1.2);

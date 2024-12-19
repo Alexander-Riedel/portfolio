@@ -24,6 +24,12 @@ export class ContactformComponent {
     this.currentLang = translate.currentLang || 'de';
   }
 
+  navigateToHome(): void {
+    this.router.navigate(['/']).then(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   changeLang(lang: string): void {
     this.translate.use(lang);
     this.currentLang = lang;
